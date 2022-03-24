@@ -2,7 +2,7 @@ let express = require('express')
 const path= require("path")
 let app = express();
 app.use(express.static("public"))
-app.listen(3030,()=> console.log("esto fue exitoso en el puerto 3030") )
+app.listen(process.env.PORT || 3030,()=> console.log("esto fue exitoso en el puerto 3030") )
 // ruta raiz
 /* app.get("/", function(req,res){
     res.send ("hola como estan")
