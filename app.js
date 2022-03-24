@@ -2,7 +2,9 @@ let express = require('express')
 const path= require("path")
 let app = express();
 app.use(express.static("public"))
+
 const PORT = process.env.PORT || 4001;
+
 app.listen(PORT, () => console.log("running on port 4001"));
 
 
