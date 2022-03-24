@@ -1,0 +1,302 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+header{
+    background-color: #EAC926;
+
+
+}
+h3{
+  font-size: 24px;
+}
+p{
+  font-size: 12px;
+}
+.cabecera{
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form{
+  width: 40%;
+
+  display: flex;
+  
+  align-items: center;
+  padding: 2px;
+  font-size: 11px;
+}
+.logo{
+  width: 40%;
+  padding: 5%;
+}
+
+
+header nav{
+  font-size: 12px;
+  display: none;
+}
+.lista{
+  list-style-type: none;
+
+}
+header ul li a , .enlace {
+  text-decoration: none;
+  color: #000;
+}
+.buscador{
+  
+    background-color: #fff;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+  
+}
+.submit{
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #666;
+  width: 10%;
+}
+
+ .tarjeta {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+div.burger-menu {
+  text-align: center;
+}
+
+div.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+.descripcion-articulo{
+  
+  width: 100%;
+  
+  
+  border-top: 1px solid #ebebeb;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+padding: 15px;
+align-items: baseline;
+
+
+
+  
+}
+.descripcion-articulo .titulo:hover{
+font-size: 20px;
+color: #000;
+
+
+}
+
+.descripcion-articulo .titulo{
+  display: none;
+  color:#fff ;
+  margin: 20px 0px;
+  
+}
+section.banner  img {
+  width: 100%;
+  
+}
+
+main{
+  width: 90%;
+  margin: 0 auto;
+  
+}
+main section article {
+ 
+  background-color: #fff;
+  
+  margin:10px 0px;
+}
+
+main section article img {
+  width: 100%;
+}
+ .futer-copyrigth h3{
+  text-align: left;
+  margin-top: 20px;
+  font-size: 14px;
+}
+  .futer-flex{
+      text-align: center;
+  }
+  footer i {
+      font-size: 35px;
+      color: #0044aa;
+      
+  }
+  .futer{
+    margin-top: 15px;
+    
+  }
+  main section article i {
+  
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position:absolute;
+    right: 20px;
+    top: -15px;
+    
+   
+
+   
+   
+ 
+ color: #39b54a;
+}
+main section article i:hover {
+  transform: rotate(-90deg);
+}
+.precio{
+  width: 30%;
+}
+.descuento{
+  padding-left: 20px;
+  width: 70%;
+  color: #39b54a;;
+}
+.ultima-visita, .ofertas{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-register{
+  
+  
+opacity: 0.8;
+
+background-size: 10px 10px;
+display: flex;
+min-height: 100vh;
+}
+.form-register{
+  border: solid 1px black;
+  background-color:hsla(30, 30%, 92%, 0.979);
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 5em 3em ;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgb(0 0 0/ 30%);
+  text-align: center;
+}
+.div_form_container{
+  margin-top: 3em;
+  display: grid;
+  gap: 1.8em;
+}
+.div_form_group{
+  position: relative;
+  --color: #5757577e
+
+}
+.form_input{
+  width: 100%;
+  background: none;
+  color:#706c6c;
+  font-size: 1rem;
+  padding: 2px;
+  border-radius: 10px;
+
+}
+.button-register, .button-reset{
+  background-color: #0044aa;
+  border-radius: 10px;
+
+}
+.button-register:hover{
+  background-color: #0022AA;
+}
+.form_label{
+  font-size: 20px ;
+}
+
+
+
+  @media (min-width:361px){
+    .descripcion-articulo .titulo{
+      display: block;
+      
+    }
+    main section article:hover {
+
+      box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+     }
+     header nav{
+       display: block;
+     }
+     div.burger-menu{
+       display: none;
+     }
+     main section div.productos{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+     }
+     main section div.productos article{
+       width: 45%;
+     }
+     .cabecera{
+       flex-wrap: nowrap;
+     }
+     .tarjeta{
+       align-self: center;
+     }
+     header nav {
+       
+       display: flex;
+       justify-content: space-between;
+     }
+     .lista{
+       display: flex;
+       justify-content: space-between;
+     }
+     header nav li {
+       margin: 0px 5px;
+     }
+
+     @media (min-width: 769px){
+      main section div.productos article{
+        width: 23%;
+      }
+      .futer-flex{
+        display: flex;
+      }
+      .futer{
+        margin: 15px 10px;
+      }
+
+     }
+     
+  }
