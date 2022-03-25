@@ -41,11 +41,13 @@ p{
 
 
 header nav{
-  font-size: 12px;
+  font-size: 15px;
   display: none;
+
 }
 .lista{
   list-style-type: none;
+  padding-bottom: 15px;
 
 }
 header ul li a , .enlace {
